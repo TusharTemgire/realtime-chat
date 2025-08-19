@@ -1,0 +1,25 @@
+{
+    "name": "chat-server",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development nodemon src/server.js",
+        "start": "node src/server.js",
+        "sync": "node models/index.js"
+    },
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "helmet": "^7.1.0",
+        "jsonwebtoken": "^9.0.2",
+        "mysql2": "^3.11.0",
+        "sequelize": "^6.37.3",
+        "socket.io": "^4.7.5"
+    },
+    "devDependencies": {
+        "cross-env": "^10.0.0",
+        "nodemon": "^3.1.0"
+    }
+}

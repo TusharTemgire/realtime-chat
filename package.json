@@ -1,0 +1,14 @@
+{
+    "name": "realtime-chat-project",
+    "private": true,
+    "scripts": {
+        "dev": "concurrently \"npm run server:dev\" \"npm run web:dev\"",
+        "server:dev": "cd server && npm run dev",
+        "web:dev": "cd web && npm run dev",
+        "build": "cd web && npm run build",
+        "server:sync": "cd server && npm run sync"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
