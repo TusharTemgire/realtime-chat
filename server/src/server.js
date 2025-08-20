@@ -63,7 +63,7 @@ app.use("*", (req, res) => {
 // Socket.IO setup
 const io = new Server(server, {
     cors: {
-        origin: "*", // Allow all origins
+        origin: "*",
         methods: ["GET", "POST"],
         credentials: true,
     },
@@ -78,7 +78,7 @@ setSocketIO(io)
 export { io }
 
 // Start server
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 5000
 
 async function startServer() {
     try {
