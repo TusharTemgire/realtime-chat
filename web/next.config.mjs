@@ -9,16 +9,12 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
-    async headers() {
-        return [{
-            source: '/:path*',
-            headers: [
-                { key: 'Access-Control-Allow-Origin', value: '*' },
-                { key: 'Access-Control-Allow-Methods', value: 'GET,OPTIONS,PATCH,DELETE,POST,PUT' },
-                { key: 'Access-Control-Allow-Headers', value: 'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version' },
-            ]
-        }]
-    },
+    // Allow development origins for CORS
+    allowedDevOrigins: [
+        'http://localhost:4000',
+        'http://127.0.0.1:4000',
+        'http://172.24.128.1:4000'
+    ],
 }
 
 export default nextConfig
