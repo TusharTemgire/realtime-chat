@@ -55,7 +55,7 @@ A full-stack realtime chat application built with React/Next.js frontend and Nod
    ```
 
    This will start:
-   - Backend server on http://localhost:5000
+   - Backend server on http://localhost:5001
    - Frontend on http://localhost:3000
 
 ## Manual Setup
@@ -74,7 +74,7 @@ If you prefer to run servers separately:
    Create `.env` file in the server directory:
    ```env
    PORT=5000
-   FRONTEND_URL=http://localhost:5000
+   FRONTEND_URL=http://localhost:5001
    
    DB_HOST=localhost
    DB_USER=root
@@ -107,8 +107,8 @@ If you prefer to run servers separately:
 2. **Configure environment variables:**
    Create `.env.local` file in the web directory:
    ```env
-   NEXT_PUBLIC_API_URL=http://localhost:5000/api
-   NEXT_PUBLIC_WS_URL=http://localhost:5000
+   NEXT_PUBLIC_API_URL=http://localhost:5001/api
+   NEXT_PUBLIC_WS_URL=http://localhost:5001
    ```
 
 3. **Start development server:**
